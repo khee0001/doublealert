@@ -1,0 +1,29 @@
+// ==== NVDS Option Wall Levels ====
+CALL = 35.0
+PUT = 26.0
+VOL = 2.0
+GAMMA = 33.0
+DELTA = 35.0
+LOW = 31.0
+HIGH = 21.0
+
+// ==== CALL WALL ====
+hline(price=CALL, name="CALL", color=color.green, line_width=2, linestyle=hline.style_solid)
+
+// ==== PUT WALL ====
+hline(price=PUT, name="PUT", color=color.red, line_width=2, linestyle=hline.style_solid)
+
+// ==== GAMMA WALL ====
+hline(price=GAMMA, name="GAMMA", color=color.orange, line_width=2, linestyle=hline.style_solid)
+
+// ==== VOL WALL ====
+hline(price=VOL, name="VOL", color=color.gray, line_width=1, linestyle=hline.style_dotted)
+
+// ==== DELTA WALL ====
+hline(price=DELTA, name="DELTA", color=color.blue, line_width=1, linestyle=hline.style_dashed)
+
+// ==== LOW VOL POINT (Synthetic) ====
+hline(price=LOW, name="LOW VOL", color=color.purple, line_width=1, linestyle=hline.style_dotted)
+
+// ==== HIGH VOL POINT (Synthetic) ====
+hline(price=HIGH, name="HIGH VOL", color=color.fuchsia, line_width=1, linestyle=hline.style_dotted)
